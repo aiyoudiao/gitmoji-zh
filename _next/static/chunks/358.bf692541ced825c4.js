@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[358],{5358:function(e,s,t){"use strict";t.r(s);var n=t(1549),a=t(6699),l=t.n(a);let k=()=>window.navigator.platform.toUpperCase().includes("MAC");s.default=()=>(0,n.jsxs)("kbd",{className:l().kbd,children:[k()?"⌘":"Ctrl"," K"]})},6699:function(e){e.exports={kbd:"styles_kbd__URGvk"}}}]);
