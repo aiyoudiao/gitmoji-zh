@@ -19,12 +19,13 @@ const GitmojiList = (props: Props) => {
   const [isListMode, setIsListMode] = useLocalStorage('isListMode', false)
 
   const gitmojis = searchInput
-    ? props.gitmojis.filter(({ emoji, code, description }) => {
+    ? props.gitmojis.filter(({ emoji, code, description, description_zhCN }) => {
         const lowerCasedSearch = searchInput.toLowerCase()
 
         return (
           code.includes(lowerCasedSearch) ||
           description.toLowerCase().includes(lowerCasedSearch) ||
+          description_zhCN.toLowerCase().includes(lowerCasedSearch) ||
           emoji == searchInput
         )
       })
@@ -94,6 +95,7 @@ const GitmojiList = (props: Props) => {
           <Gitmoji
             code={gitmoji.code}
             description={gitmoji.description}
+            description_zhCN={gitmoji.description_zhCN}
             emoji={gitmoji.emoji}
             isListMode={isListMode}
             key={index}

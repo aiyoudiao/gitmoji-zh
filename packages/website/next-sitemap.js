@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://gitmoji.dev',
+  siteUrl: '.',
   generateRobotsTxt: true,
 }

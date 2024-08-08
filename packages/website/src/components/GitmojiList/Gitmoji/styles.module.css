@@ -120,8 +120,13 @@
 }
 
 .gitmojiInfo p {
+  margin-bottom: 0;
   color: var(--cardText);
   word-break: normal;
+}
+
+.gitmojiInfo p:last-child {
+  margin-top: 8px;
 }
 
 @media (max-width: 768px) {

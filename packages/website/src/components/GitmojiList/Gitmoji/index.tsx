@@ -4,6 +4,7 @@ import styles from './styles.module.css'
 type Props = {
   code: string
   description: string
+  description_zhCN: string
   emoji: string
   isListMode: boolean
   name: keyof typeof emojiColorsMap
@@ -50,6 +51,7 @@ const Gitmoji = (props: Props) => {
               )}
             </code>
           </button>
+          <p>{props.description_zhCN}</p>
           <p>{props.description}</p>
         </div>
       </div>
@@ -58,7 +60,8 @@ const Gitmoji = (props: Props) => {
 }
 
 const replaceWithJSX = (text: string, find: string, replace: JSX.Element) => {
-  const nodes: (string | JSX.Element)[] = text.split(find)
+
+  const nodes: (string | JSX.Element)[] = text?.split(find) || []
   const first = nodes.shift()
 
   return nodes

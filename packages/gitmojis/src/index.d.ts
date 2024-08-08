@@ -15,6 +15,10 @@ declare module 'gitmojis' {
      */
     readonly description: string
     /**
+     * Gitmoji use-case description_zhCN.
+     */
+    readonly description_zhCN: string
+    /**
      * Gitmoji name.
      * @example 'art', 'zap', 'fire', 'bug'
      */
