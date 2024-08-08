@@ -316,10 +316,5 @@ exports[`SEO should render the component with pageTitle and pageUrl 1`] = `
     content="78vmlhi_erc-UGybxcGwHyiUtf04wzYExTLa-4LoWio"
     name="google-site-verification"
   />
-  <link
-    href="/static/opensearchdescription.xml"
-    rel="search"
-    type="application/opensearchdescription+xml"
-  />
 </Head>
 `;

@@ -12,7 +12,7 @@
     "lint": "eslint ./src && prettier --check ./src/**/*.{ts,tsx,css}",
     "start": "next start",
     "test": "FORCE_COLOR=1 jest --coverage",
-    "deploy": "node ./node_modules/gh-pages/bin/gh-pages-clean.js && gh-pages -d dist"
+    "deploy": "node createNoJekyll.js && node ./node_modules/gh-pages/bin/gh-pages-clean.js && gh-pages -d ./dist --dotfiles"
   },
   "devDependencies": {
     "@types/fetch-mock": "^7.3.8",
